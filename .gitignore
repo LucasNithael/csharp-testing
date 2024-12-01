@@ -1,0 +1,101 @@
+# Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build Results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+
+# Configuration
+appsettings*.json
+app.config
+web.config
+*.config
+*.env
+
+# IIS Express
+/.vs/
+iisexpress/
+
+# Resharper
+_ReSharper*/
+*.ReSharper
+*.DotSettings.user
+
+# Rider
+.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/dictionaries
+.idea/**/shelf/
+.idea/**/workspace.xml
+.idea/**/taskHistory/
+
+# dotCover
+*.dotCover
+
+# Backup & Logs
+*.log
+*.bak
+*.swp
+*.orig
+
+# Package management
+*.nupkg
+*.snupkg
+project.lock.json
+*.nuget/packages/
+.nuget/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Others
+*.mdf
+*.ldf
+*.class
+*.pdb
+*.cache
+*.pyc
+*.pyo
+*.tlog
+*.log
+*.orig
+
+# JetBrains Rider
+.idea/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Miscellaneous
+*.temp
+*.tmp
+*.bak
+*.old
+*.backup
+*.swp
