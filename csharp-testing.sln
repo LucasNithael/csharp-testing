@@ -10,9 +10,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Testes de Unidade", "1-Te
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1-Testes Basicos", "1.1-Testes Basicos", "{115E9ADF-A7DD-4642-9448-806496C3DBC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{53B72FA2-ABE0-49AF-BD4E-B479B4508E21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo", "Demo\Demo.csproj", "{53B72FA2-ABE0-49AF-BD4E-B479B4508E21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Tests", "Demo.Tests\Demo.Tests.csproj", "{CC44F5AC-4277-4A0B-A3A9-57E71DF0F935}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Tests", "Demo.Tests\Demo.Tests.csproj", "{CC44F5AC-4277-4A0B-A3A9-57E71DF0F935}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
