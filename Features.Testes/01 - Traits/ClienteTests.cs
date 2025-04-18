@@ -1,56 +1,53 @@
-﻿using Xunit;
+﻿using System;
 using Features.Clientes;
+using Xunit;
 
-namespace Features.Testes._01___Traits
+namespace Features.Tests
 {
     public class ClienteTests
     {
         [Fact(DisplayName = "Novo Cliente Válido")]
-        [Trait("Categoria", "Cliente Trait Testes")]
+        [Trait("Categoria","Cliente Trait Testes")]
         public void Cliente_NovoCliente_DeveEstarValido()
         {
-            // Arrange 
+            // Arrange
             var cliente = new Cliente(
                 Guid.NewGuid(),
-                "Fulano",
-                "Ciclano",
+                "Eduardo",
+                "Pires",
                 DateTime.Now.AddYears(-30),
-                "fulado@email.com",
+                "edu@edu.com",
                 true,
-                DateTime.Now
-                );
+                DateTime.Now);
 
             // Act
             var result = cliente.EhValido();
 
-            // Assert
+            // Assert 
             Assert.True(result);
-            Assert.Empty(cliente.ValidationResult.Errors);
-
+            Assert.Equal(0, cliente.ValidationResult.Errors.Count);
         }
 
         [Fact(DisplayName = "Novo Cliente Inválido")]
         [Trait("Categoria", "Cliente Trait Testes")]
         public void Cliente_NovoCliente_DeveEstarInvalido()
         {
-
-            // Arrange 
+            // Arrange
             var cliente = new Cliente(
                 Guid.NewGuid(),
                 "",
                 "",
-                DateTime.Now.AddYears(-30),
-                "fulado@email.com",
+                DateTime.Now,
+                "edu2edu.com",
                 true,
-                DateTime.Now
-                );
+                DateTime.Now);
 
             // Act
             var result = cliente.EhValido();
 
-            // Assert
+            // Assert 
             Assert.False(result);
-            Assert.NotEmpty(cliente.ValidationResult.Errors);
+            Assert.NotEqual(0, cliente.ValidationResult.Errors.Count);
         }
     }
 }

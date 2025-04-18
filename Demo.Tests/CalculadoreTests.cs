@@ -16,7 +16,7 @@ namespace Demo.Tests
             Assert.Equal(4, resultado);
         }
 
-        [Theory]
+        [Theory]  // permite que possa ser passado argumentos para os métodos de testes
         [InlineData(1, 1, 2)]
         [InlineData(2, 2, 4)]
         [InlineData(3, 2, 5)]

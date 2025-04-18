@@ -1,47 +1,45 @@
-﻿using Features.Clientes;
+﻿using System;
+using Features.Clientes;
 using Xunit;
 
-namespace Features.Testes._01___Traits
+namespace Features.Tests
 {
-    // Collection Permite que todos os testes de uma coleção compartilhem o mesmo contexto de uma instancia de uma classe
     [CollectionDefinition(nameof(ClienteCollection))]
     public class ClienteCollection : ICollectionFixture<ClienteTestsFixture>
-    {
-    }
+    {}
+
     public class ClienteTestsFixture : IDisposable
     {
         public Cliente GerarClienteValido()
         {
             var cliente = new Cliente(
                 Guid.NewGuid(),
-                "Fulano",
-                "Ciclano",
+                "Eduardo",
+                "Pires",
                 DateTime.Now.AddYears(-30),
-                "fulado@email.com",
+                "edu@edu.com",
                 true,
-                DateTime.Now
-                );
+                DateTime.Now);
 
             return cliente;
         }
 
-        public Cliente GerarClienteInvalido()
+        public Cliente GerarClienteInValido()
         {
             var cliente = new Cliente(
                 Guid.NewGuid(),
                 "",
                 "",
-                DateTime.Now.AddYears(-30),
-                "fulado@email.com",
+                DateTime.Now,
+                "edu2edu.com",
                 true,
-                DateTime.Now
-                );
+                DateTime.Now);
 
             return cliente;
         }
+
         public void Dispose()
         {
         }
-
     }
 }
