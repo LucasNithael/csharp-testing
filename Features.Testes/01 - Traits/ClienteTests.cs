@@ -2,7 +2,7 @@
 using Features.Clientes;
 using Xunit;
 
-namespace Features.Tests
+namespace Features.Tests.Fixture
 {
     public class ClienteTests
     {

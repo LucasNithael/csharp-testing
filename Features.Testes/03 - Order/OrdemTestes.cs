@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace Features.Tests
+namespace Features.Tests.Order
 {
     [TestCaseOrderer("Features.Tests.PriorityOrderer", "Features.Tests")]
     public class OrdemTestes

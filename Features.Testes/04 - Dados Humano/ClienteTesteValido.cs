@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace Features.Tests.Fixture
+namespace Features.Tests.DadosHumano
 {
     [Collection(nameof(ClienteCollection))]
     public class ClienteTesteValido
@@ -13,8 +13,7 @@ namespace Features.Tests.Fixture
         }
         
 
-        [Fact(DisplayName = "Novo Cliente Válido")]
-        [Trait("Categoria", "Cliente Fixture Testes")]
+        [Fact(DisplayName = "Novo Cliente Válido - 04")]
         public void Cliente_NovoCliente_DeveEstarValido()
         {
             // Arrange
