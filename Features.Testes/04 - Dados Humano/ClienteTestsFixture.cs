@@ -33,6 +33,27 @@ namespace Features.Tests.DadosHumano
             return cliente;
         }
 
+        public Cliente GerarClienteInvalido()
+        {
+            var faker = new Faker("pt_BR");
+            var genero = faker.PickRandom<Name.Gender>();
+            var name = faker.Name.FirstName(genero);
+            var lastName = "";//faker.Name.LastName(genero);
+            var email = faker.Internet.Email(name, lastName);
+
+            var cliente = new Cliente(
+                Guid.NewGuid(),
+                name,
+                lastName,
+                DateTime.Now.AddYears(-30),
+                email,
+                true,
+                DateTime.Now
+                );
+
+            return cliente;
+        }
+
         public void Dispose()
         {
         }
